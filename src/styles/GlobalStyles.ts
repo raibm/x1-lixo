@@ -20,9 +20,8 @@ export default createGlobalStyle`
 
 
   :root {
-    --main-color: #2D132C;
-    --sinister-orange: #EE4540;
-    --almost-pink: #C72C41;
-    --bar-color: #ffcc66;
+    --main-color: #D5C4B4;
+    --sinister-white: #F4EFEB;
+    --bar-color: #D4805C;
   }
 `

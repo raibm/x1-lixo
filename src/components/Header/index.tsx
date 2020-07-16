@@ -4,8 +4,8 @@ import { Container, Avatar } from './styles';
 
 const Header: React.FC = () => {
   return (
-    <Container>
-      <Avatar/>
+    <Container className="main-container">
+      <Avatar />
     </Container>
   );
 }
