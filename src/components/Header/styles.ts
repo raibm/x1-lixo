@@ -22,41 +22,37 @@ export const Container = styled.div`
 export const Avatar = styled.img`
   background: red;
   height: 50px;
-  width: 50px;
-  
-  clip-path: polygon(0% 100%, 100% 170%, 0% 0%);
+  width: 60px;
 
-  margin-right: 800px;
-  margin-top: 10px;
+  filter: grayscale(1);
 
-  z-index: 1;
-
-  transition: clip-path 1s;
+  transition: 0.75s;
 
   cursor: pointer;
 
   :hover{
     height: 100px;
     width: 100px;
-    clip-path: polygon(0% 0%,0% 100%,10000% 0%);
+    transform: skewX(-30deg);
+    margin-left: -50px;
+     filter: grayscale(0);
   }
 
   @media (max-width: 420px), (max-height: 360px){
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 
     margin-top: 5px;
-    margin-left: 5px;
+    margin-right: 90px;
+
+    z-index: 1;
 
     :hover{
       height: 90px;
       width: 90px;
+      clip-path: polygon(0% 0%,0% 100%,10000% 0%);
     }
   }
-`;
-
-export const MenuActions = styled.div`
-    display: flex;
 `;
 
 export const HomeIcon = styled(Home)`
@@ -68,18 +64,31 @@ export const HomeIcon = styled(Home)`
   > path {
       color: var(--main-color);
     }
+
+  @media(max-width: 420px), (max-height: 320px){
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 4px;
+  }
 `;
 
-export const LittleMenu = styled.div`
+export const SubMenu = styled.div`
   height: 50px;
-  width: 800px;
+  width: 60px;
 
   margin-top: 10px;
 
   transform: skewX(30deg);
 
+  display: flex;
 
-  position: absolute;
+  @media(max-width: 420px), (max-height: 360px){
+    height: 40px;
+    width: 100px;
+
+    margin-top: 5px;
+  }
 
   background: var(--bar-color);
 `;
