@@ -5,7 +5,7 @@ import { Container, Avatar, LittleMenu, HomeIcon } from './styles';
 const Header: React.FC = () => {
   return (
     <Container className="main-container">
-      <Avatar src="https://lastfm.freetls.fastly.net/i/u/770x0/1f1d1906c4cabf1c7c374f318da80d73.jpg"/>
+      <Avatar src="https://spinoff.com.br/wp-content/uploads/Robert-Downey-Jr-Tony-Stark-Iron-Man-3-Marvel-Disney-1200x900.jpg"/>
         <LittleMenu>
           <HomeIcon/>
         </LittleMenu>

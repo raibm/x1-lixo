@@ -36,27 +36,29 @@ export const Avatar = styled.img`
   cursor: pointer;
 
   :hover{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+    margin-right: 850px;
     clip-path: polygon(0% 0%,0% 100%,10000% 0%);
   }
 
   @media (max-width: 420px), (max-height: 360px){
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 
     margin-top: 5px;
-    margin-left: 5px;
+    margin-right: 90px;
+
+    clip-path: polygon(0% 100%, 100% 170%, 0% 0%);
+
+    z-index: 1;
 
     :hover{
       height: 90px;
       width: 90px;
+      clip-path: polygon(0% 0%,0% 100%,10000% 0%);
     }
   }
-`;
-
-export const MenuActions = styled.div`
-    display: flex;
 `;
 
 export const HomeIcon = styled(Home)`
@@ -68,6 +70,13 @@ export const HomeIcon = styled(Home)`
   > path {
       color: var(--main-color);
     }
+
+  @media(max-width: 420px), (max-height: 320px){
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+    margin-top: 4px;
+  }
 `;
 
 export const LittleMenu = styled.div`
@@ -80,6 +89,14 @@ export const LittleMenu = styled.div`
 
 
   position: absolute;
+
+
+  @media(max-width: 420px), (max-height: 360px){
+    height: 40px;
+    width: 100px;
+
+    margin-top: 5px;
+  }
 
   background: var(--bar-color);
 `;
