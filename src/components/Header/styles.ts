@@ -27,6 +27,7 @@ export const Avatar = styled.img`
   :hover{
     height: 100px;
     width: 100px;
+    box-shadow: inset 0 0 5em black, 0 0 5em black;
   }
 
   @media (max-width: 420px), (max-height: 360px){
@@ -39,6 +40,7 @@ export const Avatar = styled.img`
     :hover{
       height: 90px;
       width: 90px;
+
     }
   }
 `;
