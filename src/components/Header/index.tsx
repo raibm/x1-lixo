@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, SubMenu, HomeIcon, DuelIcon } from './styles';
+import { Container, SubMenu, HomeIcon, DuelIcon, DefeatIcon, ConquestIcon, ProfileIcon } from './styles';
 
 const Header: React.FC = () => {
   return (
@@ -12,13 +12,13 @@ const Header: React.FC = () => {
           <DuelIcon/>
         </SubMenu>
         <SubMenu>
-          {/* <HomeIcon/> */}
+          <DefeatIcon/>
         </SubMenu>
         <SubMenu>
-          {/* <HomeIcon/> */}
+          <ConquestIcon/>
         </SubMenu>
         <SubMenu>
-          {/* <HomeIcon/> */}
+          <ProfileIcon/>
         </SubMenu>
     </Container>
   );

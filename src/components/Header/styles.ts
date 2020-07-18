@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Home, DoubleArrow } from '../../styles/Icons';
+import { Home, Sword, Skull, Medal, User } from '../../styles/Icons';
 
 export const Container = styled.div`
 background: var(--bar-color);
@@ -91,9 +91,22 @@ export const HomeIcon = styled(Home)`
  ${iconCSS};
 `;
 
-export const DuelIcon = styled(DoubleArrow)`
+export const DuelIcon = styled(Sword)`
  ${iconCSS};
 `;
+
+export const DefeatIcon = styled(Skull)`
+ ${iconCSS};
+`;
+
+export const ConquestIcon = styled(Medal)`
+ ${iconCSS};
+`;
+
+export const ProfileIcon = styled(User)`
+ ${iconCSS};
+`;
+
 
 export const SubMenu = styled.button`
   display: flex;
@@ -129,11 +142,11 @@ export const SubMenu = styled.button`
     > svg {
       
       > path {
-      color: #262626;
-    }
-    > polygon {
-      color: #262626;
-    }
+        color: #262626;
+       }
+      > polygon {
+        color: #262626;
+       }
     }
   } 
 
