@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Avatar, SubMenu, HomeIcon } from './styles';
+import { Container, SubMenu, HomeIcon, DuelIcon } from './styles';
 
 const Header: React.FC = () => {
   return (
@@ -9,16 +9,16 @@ const Header: React.FC = () => {
           <HomeIcon/>
         </SubMenu>
         <SubMenu>
-          <HomeIcon/>
+          <DuelIcon/>
         </SubMenu>
         <SubMenu>
-          <Avatar src="https://lastfm.freetls.fastly.net/i/u/770x0/1f1d1906c4cabf1c7c374f318da80d73.jpg"/>
+          {/* <HomeIcon/> */}
         </SubMenu>
         <SubMenu>
-          <HomeIcon/>
+          {/* <HomeIcon/> */}
         </SubMenu>
         <SubMenu>
-          <HomeIcon/>
+          {/* <HomeIcon/> */}
         </SubMenu>
     </Container>
   );

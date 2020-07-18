@@ -22,7 +22,7 @@ export default createGlobalStyle`
   :root {
     --main-color: #355C7D;
     --almost-purple: #6C5B7B;
-    --bar-color: #F8B195;
+    --bar-color: linear-gradient(2deg, #b3cdd1 0%, #9fa4c4 74%);
     --almost-pink: #C06C84;
     --pink: #F67280;
   }

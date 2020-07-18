@@ -6,6 +6,6 @@ export const Container = styled.div`
 
   height: 100vh;
 
-  background: var(--main-color);
+  background: #E1E7E4;
 `;
 

@@ -1,2 +1,2 @@
-export { Home } from 'styled-icons/material';
+export { Home, DoubleArrow } from 'styled-icons/material';
 
