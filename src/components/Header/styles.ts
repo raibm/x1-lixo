@@ -6,7 +6,7 @@ export const Container = styled.div`
 background: var(--bar-color);
   
   width: 100%;
-  height: 70px;
+  height: 45px;
   
   position: fixed;
   display: flex;
@@ -27,7 +27,11 @@ background: var(--bar-color);
   @media (max-width: 420px){
     height: 50px;
   }
-
+  
+  @media (max-width: 320px){
+    height: 40px;
+  }
+  
 `;
 
 export const Avatar = styled.img`
@@ -67,8 +71,8 @@ export const Avatar = styled.img`
 `;
 
 const iconCSS = css`
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
 
   > path {
       color: ghostwhite;
@@ -85,6 +89,14 @@ const iconCSS = css`
     margin-left: 5px;
     margin-top: 4px;
   }
+
+  @media(max-width: 320px), (max-height: 320px){
+    height: 20px;
+    width: 20px;
+    margin-left: 3px;
+    margin-top: 4px;
+  }
+  
 `;
 
 export const HomeIcon = styled(Home)`
@@ -107,13 +119,13 @@ export const ProfileIcon = styled(User)`
  ${iconCSS};
 `;
 
-
 export const SubMenu = styled.button`
+
   display: flex;
 
-  height: 50px;
+  height: 35px;
   width: 60px;
-  margin-top: 10px;
+  margin-top: 5px;
 
   justify-content: center;
   align-items: center;
@@ -121,8 +133,7 @@ export const SubMenu = styled.button`
   border: none;
   border-bottom: solid 1px #262626;
 
-  transform: skewX(20deg);
-  transition: 0.30s;
+  transition: 0.20s;
 
   :hover {
     border-left: solid 5px #262626;
@@ -151,12 +162,28 @@ export const SubMenu = styled.button`
   } 
 
 
-  @media(max-width: 420px), (max-height: 360px){
+  @media(max-width: 420px){
     height: 40px;
-    width: 100px;
+    width: 80px;
+
+    margin-top: 5px;
+  }
+
+  @media(max-width: 320px){
+    height: 30px;
+    width: 60px;
 
     margin-top: 5px;
   }
 
   background: linear-gradient(2deg, #b3cdd1 0%, #9fa4c4 74%);
+`;
+
+export const SocialMenu = styled.button`
+
+  display: flex;
+
+  height: 25px;
+  width: 40px;
+  margin-top: 5px;
 `;

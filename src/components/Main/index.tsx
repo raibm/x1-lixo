@@ -9,7 +9,7 @@ const Main: React.FC = () => {
   return (
     <Container>
       <Header/>
-      <Body/>
+      {/* <Body/> */}
     </Container>
   );
 }
