@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { Home, Sword, Skull, Medal, User } from '../../styles/Icons';
 
 export const Container = styled.div`
-background: var(--bar-color);
+background: var(--main-color);
   
   width: 100%;
   height: 45px;
@@ -12,7 +12,7 @@ background: var(--bar-color);
   display: flex;
 
   & :first-child {
-    border-left: solid 1px #262626;
+    border-left: solid 1px var(--default-icon-color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
@@ -75,10 +75,10 @@ const iconCSS = css`
   width: 20px;
 
   > path {
-      color: ghostwhite;
+      color: var(--default-icon-color);
     }
   > polygon {
-    color: ghostwhite;
+    color: var(--default-icon-color);
   }
   
   border-left: none!important;
@@ -131,32 +131,32 @@ export const SubMenu = styled.button`
   align-items: center;
 
   border: none;
-  border-bottom: solid 1px #262626;
+  border-bottom: solid 1px var(--default-icon-color);
 
   transition: 0.20s;
 
   :hover {
-    border-left: solid 5px #262626;
-    border-bottom: solid 5px #262626;
-    border-right: solid 1px #262626;
-    border-top: solid 1px #262626;
+    border-left: solid 5px var(--default-icon-color);
+    border-bottom: solid 5px var(--default-icon-color);
+    border-right: solid 1px var(--default-icon-color);
+    border-top: solid 1px var(--default-icon-color);
   
   }
 
   :focus {
     outline: none;
-    border-left: solid 5px #262626;
-    border-bottom: solid 5px #262626;
-    border-right: solid 1px #262626;
-    border-top: solid 1px #262626;
+    border-left: solid 5px var(--default-icon-color);
+    border-bottom: solid 5px var(--default-icon-color);
+    border-right: solid 1px var(--default-icon-color);
+    border-top: solid 1px var(--default-icon-color);
 
     > svg {
       
       > path {
-        color: #262626;
+        color: var(--actived-icon-color);
        }
       > polygon {
-        color: #262626;
+        color: var(--actived-icon-color);
        }
     }
   } 
@@ -176,7 +176,7 @@ export const SubMenu = styled.button`
     margin-top: 5px;
   }
 
-  background: linear-gradient(2deg, #b3cdd1 0%, #9fa4c4 74%);
+  background: var(--main-color);
 `;
 
 export const SocialMenu = styled.button`
