@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-import { Home } from '../../styles/Icons';
+import { PowerSettingsNew } from '../../styles/Icons';
 
 export const Container = styled.div`
   background: var(--almost-purple);
   
   width: 100%;
-  height: 70px;
+  height: 68px;
   
   position: fixed;
   display: flex;
@@ -19,27 +19,24 @@ export const Container = styled.div`
 
 `;
 
-export const Avatar = styled.img`
-  background: red;
-  height: 50px;
-  width: 50px;
+export const Avatar = styled.button`
+  background: var(--main-color);
+  height: 60px;
+  width: 60px;
   
   clip-path: polygon(0% 100%, 100% 170%, 0% 0%);
 
-  margin-right: 800px;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-left: -390px;
 
-  z-index: 1;
-
-  transition: clip-path 1s;
+  position: absolute;
+  
+  border: none;
 
   cursor: pointer;
 
-  :hover{
-    height: 50px;
-    width: 50px;
-    margin-right: 850px;
-    clip-path: polygon(0% 0%,0% 100%,10000% 0%);
+  :focus {
+    outline: none;
   }
 
   @media (max-width: 420px), (max-height: 360px){
@@ -49,26 +46,23 @@ export const Avatar = styled.img`
     margin-top: 5px;
     margin-right: 90px;
 
-    clip-path: polygon(0% 100%, 100% 170%, 0% 0%);
-
-    z-index: 1;
-
     :hover{
       height: 90px;
       width: 90px;
-      clip-path: polygon(0% 0%,0% 100%,10000% 0%);
     }
   }
 `;
 
-export const HomeIcon = styled(Home)`
-  height: 50px;
-  width: 50px;
-  transform: skewX(-30deg);
-  margin-left: 5px;
+const iconPowerCSS = css`
+  height: 18px;
+  width: 18px;
 
+  margin: inherit;
+  margin-top: 16px;
+  margin-left: -2.5px;
+  
   > path {
-      color: var(--main-color);
+      color: #fef678;
     }
 
   @media(max-width: 420px), (max-height: 320px){
@@ -79,8 +73,12 @@ export const HomeIcon = styled(Home)`
   }
 `;
 
+export const LoginIcon = styled(PowerSettingsNew)`
+  ${iconPowerCSS}
+`;
+
 export const LittleMenu = styled.div`
-  height: 50px;
+  height: 43px;
   width: 800px;
 
   margin-top: 10px;
@@ -99,4 +97,16 @@ export const LittleMenu = styled.div`
   }
 
   background: var(--bar-color);
+`;
+
+export const ExtensionPowerButton = styled.div`
+  background: var(--main-color);
+  width: 810px;
+  height: 8px;
+
+  transform: skewX(30deg);
+  margin-right: -25px;
+
+  margin-top: auto; 
+  margin-bottom: 3px;
 `;

@@ -20,7 +20,7 @@ export default createGlobalStyle`
 
 
   :root {
-    --main-color: #355C7D;
+    --main-color: #2c2a2a;
     --almost-purple: #6C5B7B;
     --bar-color: #F8B195;
     --almost-pink: #C06C84;
