@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
+  /* display: flex; */
   justify-content: center;
 
   height: 100vh;
 
-  background: #E1E7E4;
+  background: var(--actived-icon-color);
 `;
 

@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Banner } from './styles';
 
 const Duelist: React.FC = () => {
   return (
     <Container>
+      <Banner/>
       
     </Container>
   );
