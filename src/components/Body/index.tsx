@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, VersusTitle } from './styles';
 
 import Duelist from '../Duelist';
 
@@ -8,6 +8,9 @@ const Body: React.FC = () => {
   return (
     <Container>
       <Duelist/>
+      <VersusTitle>
+        VS
+      </VersusTitle>
       <Duelist/>
     </Container>
   );

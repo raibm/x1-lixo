@@ -21,6 +21,7 @@ export default createGlobalStyle`
 
   :root {
     --main-color: #262626;
+    --almost-black: #181818;
     --default-icon-color: #F8F8FF;
     --actived-icon-color: #F7EC97;
   }

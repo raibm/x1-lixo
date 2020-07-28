@@ -6,7 +6,6 @@ const Duelist: React.FC = () => {
   return (
     <Container>
       <Banner/>
-      
     </Container>
   );
 }

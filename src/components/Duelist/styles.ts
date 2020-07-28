@@ -1,17 +1,34 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 80%;
+  height: 80vh;
   width: 100%;
-  background: gray;
+
+  background: var(--almost-black);
+
+  justify-content: center;
+  align-items: center;
+  
+  display: flex;
+
+  @media(max-width: 800px){
+    width: 50%;
+  }
 `;
 
 export const Banner = styled.div`
 
-  width: 150px;
-  height: 90px;
+  width: 40vw;
+  height: 60vh;
 
-  transform: skewX(10deg);
-  background: blue;
+  margin-top: 45px;
+
+  background: var(--main-color);
+
+  border-radius: 50px;
+`;
+
+export const VersusImage = styled.img`
+  
 `;
 
