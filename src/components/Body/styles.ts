@@ -11,17 +11,61 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const VersusTitle = styled.h1`
-  z-index: 2;
+export const VersusTitleRightLetter = styled.h1`
   position: fixed;
-
   align-self: center;
-  
+
+  margin-left: 20px;
+
   background: transparent;
 
   font: normal 100px 'Abel', Helvetica, Arial;
 
-	color: black;
+  animation: ledQuebrado 20s linear infinite;
 
-  text-shadow: 0px 0px 1px #F4A1F4, 0px 0px 3px #F4A1F4, 0px 0px 5px #F4A1F4;
+  @keyframes ledQuebrado {
+    0% {
+      color: #FF9900;
+      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+    }
+    99% {
+      color: #FF9900;
+      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+    }
+    100% {
+      color: black;
+      text-shadow: none;
+    }
+  }
 `;
+
+export const VersusTitleLeftLetter = styled.h1`
+  position: fixed;
+  align-self: center;
+
+  margin-left: -20px;
+
+  background: transparent;
+
+  font: normal 100px 'Abel', Helvetica, Arial;
+
+  animation: ledQuebrado 5s infinite;
+
+  @keyframes ledQuebrado {
+    0% {
+      color: #FF9900;
+      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+    }
+
+    50% {
+      color: black;
+      text-shadow: none;
+    }
+
+    100% {
+      color: #FF9900;
+      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+    }
+  }
+`;
+

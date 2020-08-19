@@ -2,10 +2,17 @@ import React from 'react';
 
 import { Container, Banner } from './styles';
 
-const Duelist: React.FC = () => {
+
+interface DuelistProps {
+  img: string;
+}
+
+const Duelist: React.FC<DuelistProps> = (props) => {
   return (
     <Container>
-      <Banner/>
+      <Banner>
+        <img src={props.img} alt=""/>
+      </Banner>
     </Container>
   );
 }

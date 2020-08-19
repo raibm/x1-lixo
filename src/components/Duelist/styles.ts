@@ -25,10 +25,14 @@ export const Banner = styled.div`
 
   background: var(--main-color);
 
-  border-radius: 50px;
+  transform: skew(10deg);
+
+  img {
+    height: 60vh;
+    width: 39vw;
+    transform: skew(-10deg);
+  }
+
 `;
 
-export const VersusImage = styled.img`
-  
-`;
 
