@@ -11,14 +11,14 @@ import secondHero from '../../assets/champions/deus.png';
 const Body: React.FC = () => {
   return (
     <Container>
-      <Duelist img={firstHero} nickname="courtesy"/>
+      <Duelist idInfo="info" title="Últimas palavras:" img={firstHero} nickname="courtesy"/>
       <VersusTitleLeftLetter>
         V
       </VersusTitleLeftLetter>
       <VersusTitleRightLetter>
         S
       </VersusTitleRightLetter>
-      <Duelist img={secondHero} nickname="passfail3d"/>
+      <Duelist idInfo="info-brother" id="player-name" img={secondHero} nickname="passfail3d"/>
     </Container>
   );
 }
