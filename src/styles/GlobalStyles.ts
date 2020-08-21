@@ -11,7 +11,7 @@ export default createGlobalStyle`
     height: 100%;
     width: 100%;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: Helvetica, Arial;
   }
 
   html {
@@ -23,6 +23,6 @@ export default createGlobalStyle`
     --main-color: #262626;
     --almost-black: #181818;
     --default-icon-color: #F8F8FF;
-    --actived-icon-color: #F7EC97;
+    --actived-icon-color: #FF4300;
   }
 `

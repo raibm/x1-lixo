@@ -19,22 +19,22 @@ export const VersusTitleRightLetter = styled.h1`
 
   background: transparent;
 
-  font: normal 100px 'Abel', Helvetica, Arial;
+  font: normal 100px 'Abel';
 
-  animation: ledQuebrado 20s linear infinite;
+  animation: ledQuebrados 0.3s linear infinite;
 
-  @keyframes ledQuebrado {
+  @keyframes ledQuebrados {
     0% {
+      color: black; 
+      text-shadow: none;
+    }
+    1% {
       color: #FF9900;
       text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
     }
     99% {
       color: #FF9900;
       text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
-    }
-    100% {
-      color: black;
-      text-shadow: none;
     }
   }
 `;
@@ -47,19 +47,14 @@ export const VersusTitleLeftLetter = styled.h1`
 
   background: transparent;
 
-  font: normal 100px 'Abel', Helvetica, Arial;
+  font: normal 100px 'Abel';
 
-  animation: ledQuebrado 5s infinite;
+  animation: ledQuebradoLeft 5s linear infinite;
 
-  @keyframes ledQuebrado {
+  @keyframes ledQuebradoLeft {
     0% {
       color: #FF9900;
       text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
-    }
-
-    50% {
-      color: black;
-      text-shadow: none;
     }
 
     100% {

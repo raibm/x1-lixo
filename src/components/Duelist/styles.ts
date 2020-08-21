@@ -18,21 +18,64 @@ export const Container = styled.div`
 
 export const Banner = styled.div`
 
-  width: 40vw;
+  width: 39vw;
   height: 60vh;
 
   margin-top: 45px;
 
   background: var(--main-color);
 
-  transform: skew(10deg);
+  /* transform: skew(10deg); */
 
   img {
     height: 60vh;
     width: 39vw;
-    transform: skew(-10deg);
+    /* transform: skew(-10deg); */
   }
 
+  /* :hover div{
+
+      background: green;
+      height: 20px;
+
+  } */
+`;
+
+export const PlayerName = styled.div`
+  width: 300px;
+  height: 45px;
+  position: fixed;
+
+  background: #FF9000;
+
+  margin-top: -60px;
+  margin-left: 40px;
+
+  h1 {
+    margin-top: 5px;
+    color: var(--almost-black);
+  }
+  
+  transform: skew(-10deg);
+`;
+
+
+export const InfoPlayer = styled.div`
+  width: 300px;
+  height: 500px;
+  position: fixed;
+
+  background: #FF9000;
+
+  margin-top: -40px;
+  margin-left: 40px;
+
+  h1 {
+    margin-top: 5px;
+    color: var(--almost-black);
+  }
+  
+  transform: skew(-10deg);
 `;
 
 

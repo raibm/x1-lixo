@@ -5,20 +5,20 @@ import { Container, VersusTitleLeftLetter, VersusTitleRightLetter } from './styl
 import Duelist from '../Duelist';
 
 
-import firstHero from '../../assets/champions/kassadin.png';
-import secondHero from '../../assets/champions/jarvan.png';
+import firstHero from '../../assets/champions/yasuo.png';
+import secondHero from '../../assets/champions/deus.png';
 
 const Body: React.FC = () => {
   return (
     <Container>
-      <Duelist img={firstHero}/>
+      <Duelist img={firstHero} nickname="courtesy"/>
       <VersusTitleLeftLetter>
         V
       </VersusTitleLeftLetter>
       <VersusTitleRightLetter>
         S
       </VersusTitleRightLetter>
-      <Duelist img={secondHero}/>
+      <Duelist img={secondHero} nickname="passfail3d"/>
     </Container>
   );
 }

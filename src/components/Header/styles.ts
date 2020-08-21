@@ -91,13 +91,13 @@ export const Menu = styled.div`
 
   & :first-child {
     border-left: solid 1px var(--default-icon-color);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
   }
 
   & :last-child {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
   }
 `;
 
@@ -106,7 +106,7 @@ export const Avatar = styled.img`
   height: 35px;
   width: 35px;
 
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border-left: solid 1px var(--default-icon-color);
   border-bottom: solid 1px var(--default-icon-color);
 
@@ -187,10 +187,10 @@ export const SubMenu = styled.button`
 
     > svg {
       > path {
-        color: var(--actived-icon-color);
+        color: #FF9000;
       }
       > polygon {
-        color: var(--actived-icon-color);
+        color: #FF9000;
       }
     }
   }
