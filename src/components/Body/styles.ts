@@ -64,3 +64,30 @@ export const VersusTitleLeftLetter = styled.h1`
   }
 `;
 
+export const BattleDate = styled.h1`
+  position: fixed;
+  align-self: center;
+
+  margin-top: 60px;
+  background: transparent;
+
+  font: normal 20px 'Abel';
+
+  animation: ledQuebradoLeft 5s linear infinite;
+
+  + h1 {
+    margin-top: 90px; 
+  }
+
+  @keyframes ledQuebradoLeft {
+    0% {
+      color: #FF9900;
+      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+    }
+
+    100% {
+      color: #FF9900;
+      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+    }
+  }
+`;

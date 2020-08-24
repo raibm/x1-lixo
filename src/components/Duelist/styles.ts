@@ -51,11 +51,12 @@ export const Banner = styled.div`
   }
 
   :hover img{
-    transition: 1s;
+    transition: 0.6s;
     filter: grayscale(1);
   }
 
   :hover p{
+    transition: 1s;
     font-size: 20px;
   }
           
@@ -74,8 +75,9 @@ export const PlayerName = styled.div`
   margin-left: 40px;
 
   h1 {
-    margin-top: 5px;
+    margin-top: -5px;
     color: var(--almost-black);
+    font-family: 'Sriracha', cursive;
   }
   
   /* transform: skew(-10deg); */
@@ -95,10 +97,13 @@ export const InfoPlayer = styled.div`
   margin-left: 40px;
 
   p {
+    font-family: 'Sriracha', cursive;
     font-size: 0px;
+    text-indent:0.2em;
   }
 
-  /* transform: skew(-10deg); */
+  p.last-words{
+    font-family: 'Kalam', cursive;
+    text-indent:1em;
+  }
 `;
-
-

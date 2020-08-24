@@ -24,7 +24,6 @@ const Header: React.FC = () => {
           <ProfileIcon/>
         </SubMenu>
       </Menu>
-
     </Container>
   );
 }
