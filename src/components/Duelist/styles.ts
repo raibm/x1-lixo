@@ -46,13 +46,17 @@ export const Banner = styled.div`
         margin-left: 13vw;
       }
 
-  :hover div#info{
+  @media(min-width: 500px){
+    :hover div#info{
     width: 15vw;
   }
 
   :hover div#info-brother{
     width: 15vw;
   }
+  
+  }
+
 
   :hover img{
     transition: 0.6s;
