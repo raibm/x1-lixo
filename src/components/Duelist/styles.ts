@@ -25,6 +25,8 @@ export const Banner = styled.div`
 
   background: var(--main-color);
 
+  position: fixed;
+
   /* transform: skew(10deg); */
 
   img {

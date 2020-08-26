@@ -17,6 +17,8 @@ export const VersusTitleRightLetter = styled.h1`
 
   margin-left: 20px;
 
+  z-index: 6;
+
   background: transparent;
 
   font: normal 100px 'Abel';
@@ -45,6 +47,8 @@ export const VersusTitleLeftLetter = styled.h1`
 
   margin-left: -20px;
 
+  z-index: 6;
+
   background: transparent;
 
   font: normal 100px 'Abel';
@@ -66,14 +70,19 @@ export const VersusTitleLeftLetter = styled.h1`
 
 export const BattleDate = styled.h1`
   position: fixed;
+
   align-self: center;
 
   margin-top: 60px;
+  
+  z-index: 6;
+
   background: transparent;
 
   font: normal 20px 'Abel';
 
   animation: ledQuebradoLeft 5s linear infinite;
+
 
   + h1 {
     margin-top: 90px; 
