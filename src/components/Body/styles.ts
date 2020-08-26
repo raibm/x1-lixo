@@ -116,12 +116,12 @@ export const BattleDate = styled.h1`
   }
 
   @media(max-width: 500px){
-    margin-top: 70px;
+    margin-top: 13vh;
 
     font-size: 15px;
 
   + h1 {
-    margin-top: 84px; 
+    margin-top: 15vh;
   }
   }
 `;

@@ -22,7 +22,6 @@ const smallPhone = css`
 `;
 
 const normalPhone = css`
-
   position: fixed;
   height: 50px;
   width: 50px;
@@ -181,12 +180,11 @@ export const SubMenu = styled.button`
     border-top: solid 1px var(--default-icon-color);
   }
 
-  :focus{
+  :focus {
     outline: none;
   }
-  
-  &.active
-  {
+
+  &.active {
     outline: none;
     border-left: solid 5px var(--default-icon-color);
     border-bottom: solid 5px var(--default-icon-color);
@@ -195,10 +193,10 @@ export const SubMenu = styled.button`
 
     > svg {
       > path {
-        color: #FF9000;
+        color: #ff9000;
       }
       > polygon {
-        color: #FF9000;
+        color: #ff9000;
       }
     }
   }

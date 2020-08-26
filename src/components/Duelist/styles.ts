@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 80vh;
@@ -8,16 +8,15 @@ export const Container = styled.div`
 
   justify-content: center;
   align-items: center;
-  
+
   display: flex;
 
-  @media(max-width: 800px){
+  @media (max-width: 800px) {
     width: 50%;
   }
 `;
 
 export const Banner = styled.div`
-
   width: 30vw;
   height: 30vw;
 
@@ -38,42 +37,39 @@ export const Banner = styled.div`
     /* transform: skew(-10deg); */
   }
 
-      div#player-name {
-        margin-left: 13vw;
-      } 
-
-      div#info-brother {
-        margin-left: 13vw;
-      }
-
-  @media(min-width: 500px){
-    :hover div#info{
-    width: 15vw;
+  div#player-name {
+    margin-left: 13vw;
   }
 
-  :hover div#info-brother{
-    width: 15vw;
-  }
-  
+  div#info-brother {
+    margin-left: 13vw;
   }
 
+  @media (min-width: 500px) {
+    :hover div#info {
+      width: 15vw;
+    }
 
-  :hover img{
+    :hover div#info-brother {
+      width: 15vw;
+    }
+  }
+
+  :hover img {
     transition: 0.6s;
     filter: grayscale(0);
   }
 
-  :hover p{
+  :hover p {
     transition: 1s;
     font-size: 20px;
   }
 
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     width: 40vw;
     height: 50vw;
     object-fit: cover;
   }
-          
 `;
 
 export const PlayerName = styled.div`
@@ -81,10 +77,10 @@ export const PlayerName = styled.div`
   height: 2.5vw;
   position: fixed;
 
-  background: #FF9000;
+  background: #ff9000;
 
   text-align-last: center;
-  
+
   margin-top: -3vw;
   margin-left: 2vw;
 
@@ -95,8 +91,7 @@ export const PlayerName = styled.div`
     font-size: 1.5vw;
   }
 
-
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     width: 25vw;
     height: 6vw;
 
@@ -104,10 +99,9 @@ export const PlayerName = styled.div`
       font-size: 4vw;
     }
   }
-  
+
   /* transform: skew(-10deg); */
 `;
-
 
 export const InfoPlayer = styled.div`
   width: 0px;
@@ -116,7 +110,7 @@ export const InfoPlayer = styled.div`
 
   transition: 1s;
 
-  background: #FF9000;
+  background: #ff9000;
 
   margin-top: -24.5vw;
   margin-left: 2vw;
@@ -124,15 +118,15 @@ export const InfoPlayer = styled.div`
   p {
     font-family: 'Sriracha', cursive;
     font-size: 0px;
-    text-indent:0.2em;
+    text-indent: 0.2em;
   }
 
-  p.last-words{
+  p.last-words {
     font-family: 'Kalam', cursive;
-    text-indent:1em;
+    text-indent: 1em;
   }
 
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     width: 25vw;
     height: 21vw;
 
@@ -140,5 +134,4 @@ export const InfoPlayer = styled.div`
       font-size: 4vw;
     }
   }
-  
 `;
