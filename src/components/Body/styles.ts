@@ -90,7 +90,7 @@ export const BattleDate = styled.h1`
 
   align-self: center;
 
-  margin-top: 9vh;
+  margin-top: 50px;
 
   z-index: 6;
 
@@ -101,7 +101,7 @@ export const BattleDate = styled.h1`
   animation: ledQuebradoLeft 5s linear infinite;
 
   + h1 {
-    margin-top: 12vh;
+    margin-top: 70px;
   }
 
   @keyframes ledQuebradoLeft {
@@ -119,12 +119,12 @@ export const BattleDate = styled.h1`
   }
 
   @media (max-width: 500px) {
-    margin-top: 15vh;
+    margin-top: 80px;
 
     font-size: 15px;
 
     + h1 {
-      margin-top: 18vh;
+      margin-top: 95px;
     }
   }
 `;
