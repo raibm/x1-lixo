@@ -22,11 +22,13 @@ const smallPhone = css`
 `;
 
 const normalPhone = css`
+
+  position: fixed;
   height: 50px;
   width: 50px;
 
-  margin-top: 91vh;
-  margin-left: 40vw;
+  margin-top: 55px;
+  margin-left: 24vh;
 
   z-index: 1;
 
@@ -35,8 +37,7 @@ const normalPhone = css`
     width: 90px;
     clip-path: polygon(0% 0%, 0% 100%, 10000% 0%);
 
-    margin-top: 85vh;
-    margin-left: 35vw;
+    margin-left: 155px;
   }
 `;
 
@@ -81,6 +82,8 @@ export const Container = styled.div`
 
   justify-content: center;
 
+  z-index: 7;
+
   @media (max-width: 420px) {
     height: 50px;
   }
@@ -114,8 +117,6 @@ export const Avatar = styled.img`
   margin-top: 5px;
 
   position: fixed;
-
-  z-index: 7;
 
   filter: grayscale(1);
 
