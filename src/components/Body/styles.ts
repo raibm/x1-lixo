@@ -22,6 +22,7 @@ export const VersusTitleRightLetter = styled.h1`
   background: transparent;
 
   font: normal 100px 'Abel';
+  font-size: 10vh;
 
   animation: ledQuebrados 0.3s linear infinite;
 
@@ -39,6 +40,12 @@ export const VersusTitleRightLetter = styled.h1`
       text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
     }
   }
+
+  @media(max-width: 500px){
+    font-size: 6vh;
+
+    margin-left: 10px;
+  }
 `;
 
 export const VersusTitleLeftLetter = styled.h1`
@@ -52,6 +59,7 @@ export const VersusTitleLeftLetter = styled.h1`
   background: transparent;
 
   font: normal 100px 'Abel';
+  font-size: 10vh;
 
   animation: ledQuebradoLeft 5s linear infinite;
 
@@ -65,6 +73,12 @@ export const VersusTitleLeftLetter = styled.h1`
       color: #FF9900;
       text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
     }
+  }
+
+  @media(max-width: 500px){
+    font-size: 6vh;
+
+    margin-left: -10px;
   }
 `;
 
@@ -98,5 +112,15 @@ export const BattleDate = styled.h1`
       color: #FF9900;
       text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
     }
+  }
+
+  @media(max-width: 500px){
+    margin-top: 83px;
+
+    font-size: 15px;
+
+  + h1 {
+    margin-top: 100px; 
+  }
   }
 `;

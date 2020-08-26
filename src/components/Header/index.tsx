@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         <SubMenu className="menu-button">
           <HomeIcon/>
         </SubMenu>
-        <SubMenu className="menu-button">
+        <SubMenu className="menu-button active">
           <DuelIcon/>
         </SubMenu>
         <SubMenu className="menu-button">

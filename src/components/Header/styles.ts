@@ -115,6 +115,8 @@ export const Avatar = styled.img`
 
   position: fixed;
 
+  z-index: 7;
+
   filter: grayscale(1);
 
   transition: 0.75s;
@@ -178,7 +180,12 @@ export const SubMenu = styled.button`
     border-top: solid 1px var(--default-icon-color);
   }
 
-  :focus {
+  :focus{
+    outline: none;
+  }
+  
+  &.active
+  {
     outline: none;
     border-left: solid 5px var(--default-icon-color);
     border-bottom: solid 5px var(--default-icon-color);
