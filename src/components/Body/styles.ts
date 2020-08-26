@@ -1,7 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-
   background: black;
 
   height: 100%;
@@ -9,7 +8,6 @@ export const Container = styled.div`
 
   display: flex;
   justify-content: center;
-
 `;
 
 export const VersusTitleRightLetter = styled.h1`
@@ -29,20 +27,22 @@ export const VersusTitleRightLetter = styled.h1`
 
   @keyframes ledQuebrados {
     0% {
-      color: black; 
+      color: black;
       text-shadow: none;
     }
     1% {
-      color: #FF9900;
-      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
     }
     99% {
-      color: #FF9900;
-      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
     }
   }
 
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     font-size: 4vh;
 
     margin-left: 10px;
@@ -66,17 +66,19 @@ export const VersusTitleLeftLetter = styled.h1`
 
   @keyframes ledQuebradoLeft {
     0% {
-      color: #FF9900;
-      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
     }
 
     100% {
-      color: #FF9900;
-      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
     }
   }
 
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     font-size: 4vh;
 
     margin-left: -10px;
@@ -88,8 +90,8 @@ export const BattleDate = styled.h1`
 
   align-self: center;
 
-  margin-top: 5vh;
-  
+  margin-top: 9vh;
+
   z-index: 6;
 
   background: transparent;
@@ -98,30 +100,31 @@ export const BattleDate = styled.h1`
 
   animation: ledQuebradoLeft 5s linear infinite;
 
-
   + h1 {
-    margin-top: 7vh; 
+    margin-top: 11vh;
   }
 
   @keyframes ledQuebradoLeft {
     0% {
-      color: #FF9900;
-      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
     }
 
     100% {
-      color: #FF9900;
-      text-shadow: 0px 0px 5px #FF2200, 0px 0px 9px #FF4300, 0px 0px 30px #FF0000;
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
     }
   }
 
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     margin-top: 13vh;
 
     font-size: 15px;
 
-  + h1 {
-    margin-top: 25vh;
-  }
+    + h1 {
+      margin-top: 16vh;
+    }
   }
 `;
