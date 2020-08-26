@@ -6,8 +6,8 @@ const smallPhone = css`
   height: 50px;
   width: 50px;
 
-  margin-top: 89vh;
-  margin-left: 41vw;
+  margin-top: 55px;
+  margin-left: 40vw;
 
   z-index: 1;
 
@@ -16,8 +16,8 @@ const smallPhone = css`
     width: 90px;
     clip-path: polygon(0% 0%, 0% 100%, 10000% 0%);
 
-    margin-top: 81vh;
-    margin-left: 35vw;
+    margin-top: 55px;
+    margin-left: 36vw;
   }
 `;
 
@@ -28,7 +28,7 @@ const normalPhone = css`
   width: 50px;
 
   margin-top: 55px;
-  margin-left: 24vh;
+  margin-left: 41vw;
 
   z-index: 1;
 
@@ -37,7 +37,7 @@ const normalPhone = css`
     width: 90px;
     clip-path: polygon(0% 0%, 0% 100%, 10000% 0%);
 
-    margin-left: 155px;
+    margin-left: 36vw;
   }
 `;
 
