@@ -101,7 +101,7 @@ export const BattleDate = styled.h1`
   animation: ledQuebradoLeft 5s linear infinite;
 
   + h1 {
-    margin-top: 11vh;
+    margin-top: 12vh;
   }
 
   @keyframes ledQuebradoLeft {
@@ -119,12 +119,12 @@ export const BattleDate = styled.h1`
   }
 
   @media (max-width: 500px) {
-    margin-top: 13vh;
+    margin-top: 15vh;
 
     font-size: 15px;
 
     + h1 {
-      margin-top: 16vh;
+      margin-top: 18vh;
     }
   }
 `;
