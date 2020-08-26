@@ -18,10 +18,10 @@ const Duelist: React.FC<DuelistProps> = (props) => {
       <Banner>
         <img src={props.img} alt=""/>
       <InfoPlayer id={props.idInfo}>
-        <p>{props.title}</p>
+        {/* <p>{props.title}</p>
         <p className="last-words">
           {props.lastWords}
-        </p>
+        </p> */}
       </InfoPlayer>
       <PlayerName id={props.id}>
         <h1>{props.nickname}</h1>
