@@ -42,7 +42,7 @@ export const VersusTitleRightLetter = styled.h1`
   }
 
   @media(max-width: 500px){
-    font-size: 6vh;
+    font-size: 4vh;
 
     margin-left: 10px;
   }
@@ -76,7 +76,7 @@ export const VersusTitleLeftLetter = styled.h1`
   }
 
   @media(max-width: 500px){
-    font-size: 6vh;
+    font-size: 4vh;
 
     margin-left: -10px;
   }
@@ -87,7 +87,7 @@ export const BattleDate = styled.h1`
 
   align-self: center;
 
-  margin-top: 60px;
+  margin-top: 5vh;
   
   z-index: 6;
 
@@ -99,7 +99,7 @@ export const BattleDate = styled.h1`
 
 
   + h1 {
-    margin-top: 90px; 
+    margin-top: 7vh; 
   }
 
   @keyframes ledQuebradoLeft {
@@ -115,12 +115,12 @@ export const BattleDate = styled.h1`
   }
 
   @media(max-width: 500px){
-    margin-top: 83px;
+    margin-top: 70px;
 
     font-size: 15px;
 
   + h1 {
-    margin-top: 100px; 
+    margin-top: 84px; 
   }
   }
 `;
