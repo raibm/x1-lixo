@@ -124,7 +124,7 @@ export const BattleDate = styled.h1`
     font-size: 15px;
 
     + h1 {
-      margin-top: 95px;
+      margin-top: 100px;
     }
   }
 `;
