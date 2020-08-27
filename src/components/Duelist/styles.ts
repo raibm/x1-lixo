@@ -52,6 +52,15 @@ export const Banner = styled.div`
     }
   }
 
+  @media (max-width: 499px) {
+    :hover div#info {
+      width: 25vw;
+    }
+
+    :hover div#info-brother {
+      width: 25vw;
+    }
+  }
   :hover img {
     transition: 0.6s;
     filter: grayscale(0);
@@ -125,12 +134,8 @@ export const InfoPlayer = styled.div`
     text-indent: 1em;
   }
 
-  @media (max-width: 500px) {
-    /* width: 25vw; */
-    height: 21vw;
+  @media( min-width: 500px){
+    height: 16vw;
 
-    h1 {
-      font-size: 4vw;
-    }
-  }
+    margin-top: -17vw;  }
 `;

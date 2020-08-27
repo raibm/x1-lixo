@@ -17,10 +17,10 @@ const Body: React.FC = () => {
   return (
     <Container>
       <DuelBox>
-      <Duelist idInfo="info" title="Últimas palavras:" img={firstHero} nickname="courtesy"
+      <Duelist idInfo="info" title="Últimas palavras:" img={firstHero} nickname="passfail3d"
        lastWords={lastWordsLeft}/>
       <Versus/>
-      <Duelist idBanner="brother" idInfo="info-brother" title="Últimas palavras:" id="player-name" img={secondHero} nickname="passfail3d"
+      <Duelist idBanner="brother" idInfo="info-brother" title="Últimas palavras:" id="player-name" img={secondHero} nickname="bvoy"
       lastWords={lastWordsRight}/>
       </DuelBox>
       <CommentBody/>
