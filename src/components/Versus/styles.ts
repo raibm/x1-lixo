@@ -33,3 +33,118 @@ export const Banner = styled.div`
     height: 50vw;
   }
 `;
+
+export const VersusBox = styled.div`
+
+  height: 60%;
+
+  display: flex;
+  
+  justify-content: center;
+  align-items: flex-end;
+`;
+
+export const VersusTitleRightLetter = styled.h1`
+  position: relative;
+
+  text-align: center;
+
+  background: transparent;
+
+  font: normal 100px 'Abel';
+  font-size: 10vh;
+
+  animation: ledQuebrados 0.3s linear infinite;
+
+  @keyframes ledQuebrados {
+    0% {
+      color: black;
+      text-shadow: none;
+    }
+    1% {
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
+    }
+    99% {
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
+    }
+  }
+
+  @media (max-width: 500px) {
+    font-size: 4vh;
+
+    margin-right: -2vh;
+  }
+`;
+
+export const VersusTitleLeftLetter = styled.h1`
+  background: transparent;
+  position: relative;
+
+  text-align: center;
+
+  font: normal 100px 'Abel';
+  font-size: 10vh;
+
+  animation: ledQuebradoLeft 5s linear infinite;
+
+  @keyframes ledQuebradoLeft {
+    0% {
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
+    }
+
+    100% {
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
+    }
+  }
+
+  @media (max-width: 500px) {
+    font-size: 4vh;
+
+    margin-left: -2vh;
+  }
+`;
+
+export const BattleDate = styled.h1`
+  background: transparent;
+
+  font: normal 20px 'Abel';
+  text-align-last: center;
+
+  animation: ledQuebradoLeft 5s linear infinite;
+
+  p#hour {
+    text-align: center;
+  }
+
+  @keyframes ledQuebradoLeft {
+    0% {
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
+    }
+
+    100% {
+      color: #ff9900;
+      text-shadow: 0px 0px 5px #ff2200, 0px 0px 9px #ff4300,
+        0px 0px 30px #ff0000;
+    }
+  }
+
+  @media (max-width: 500px) {
+    /* margin-top: 80px; */
+
+    font-size: 15px;
+
+    + h1 {
+      /* margin-top: 104px; */
+    }
+  }
+`;

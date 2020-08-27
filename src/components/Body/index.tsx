@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, DuelBox } from './styles';
+import { Container,DuelBox } from './styles';
 
 import Duelist from '../Duelist';
 import CommentBody from '../CommentBody';
@@ -19,7 +19,6 @@ const Body: React.FC = () => {
       <DuelBox>
       <Duelist idInfo="info" title="Últimas palavras:" img={firstHero} nickname="courtesy"
        lastWords={lastWordsLeft}/>
-
       <Versus/>
       <Duelist idBanner="brother" idInfo="info-brother" title="Últimas palavras:" id="player-name" img={secondHero} nickname="passfail3d"
       lastWords={lastWordsRight}/>
