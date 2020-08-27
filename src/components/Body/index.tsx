@@ -8,7 +8,7 @@ import Versus from '../Versus';
 
 
 import firstHero from '../../assets/champions/deus.png';
-import secondHero from '../../assets/champions/ryze.png';
+import secondHero from '../../assets/champions/kassadin.png';
 
 let lastWordsLeft = "Eu prefiro morrer do que perder a vida!";
 let lastWordsRight = "Se um dia à velocidade me matar, saiba que morri tentando frear.";
