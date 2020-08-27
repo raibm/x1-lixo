@@ -4,8 +4,13 @@ export const Container = styled.div`
   height: 90vh;
   width: 100%;
 
-  background: rgb(24,24,24);
-  background: linear-gradient(180deg, rgba(24,24,24,1) 0%, rgba(24,24,24,1) 75%, rgba(0,0,0,1) 100%);
+  background: rgb(24, 24, 24);
+  background: linear-gradient(
+    180deg,
+    rgba(24, 24, 24, 1) 0%,
+    rgba(24, 24, 24, 1) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
 
   justify-content: flex-end;
 
@@ -55,10 +60,16 @@ export const Banner = styled.div`
   @media (max-width: 499px) {
     :hover div#info {
       width: 25vw;
+      p {
+        font-size: 10px;
+      }
     }
 
     :hover div#info-brother {
       width: 25vw;
+      p {
+        font-size: 10px;
+      }
     }
   }
   :hover img {
@@ -134,8 +145,9 @@ export const InfoPlayer = styled.div`
     text-indent: 1em;
   }
 
-  @media( min-width: 500px){
+  @media (min-width: 500px) {
     height: 16vw;
 
-    margin-top: -17vw;  }
+    margin-top: -17vw;
+  }
 `;
