@@ -54,8 +54,8 @@ const iconCSS = css`
   border-left: none !important;
 
   @media (max-width: 420px), (max-height: 320px) {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     margin-left: 5px;
     margin-top: 4px;
   }
@@ -91,11 +91,11 @@ export const Container = styled.div`
 export const Menu = styled.div`
   display: flex;
 
-  & :first-child {
-    border-left: solid 1px var(--default-icon-color);
-    /* border-top-left-radius: 10px;
+  /* & :first-child {
+    border-left: solid 1px var(--default-icon-color); */
+  /* border-top-left-radius: 10px;
     border-bottom-left-radius: 10px; */
-  }
+  /* } */
 
   & :last-child {
     /* border-top-right-radius: 10px;
@@ -174,10 +174,11 @@ export const SubMenu = styled.button`
   transition: 0.2s;
 
   :hover {
-    border-left: solid 5px var(--default-icon-color);
-    border-bottom: solid 5px var(--default-icon-color);
-    border-right: solid 1px var(--default-icon-color);
-    border-top: solid 1px var(--default-icon-color);
+    border-bottom: solid 1px #ff9000;
+    svg {
+      width: 25px;
+      height: 25px;
+    }
   }
 
   :focus {
@@ -186,12 +187,13 @@ export const SubMenu = styled.button`
 
   &.active {
     outline: none;
-    border-left: solid 5px var(--default-icon-color);
-    border-bottom: solid 5px var(--default-icon-color);
-    border-right: solid 1px var(--default-icon-color);
-    border-top: solid 1px var(--default-icon-color);
+    border-left: solid 1px #ff9000;
+    border-bottom: solid 1px #ff9000;
+    border-right: solid 1px #ff9000;
 
     > svg {
+      width: 25px;
+      height: 25px;
       > path {
         color: #ff9000;
       }
@@ -206,6 +208,13 @@ export const SubMenu = styled.button`
     width: 74px;
 
     margin-top: 5px;
+
+    &.active {
+      > svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   @media (max-width: 360px) {

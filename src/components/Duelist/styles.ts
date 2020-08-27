@@ -126,7 +126,7 @@ export const InfoPlayer = styled.div`
   }
 
   @media (max-width: 500px) {
-    width: 25vw;
+    /* width: 25vw; */
     height: 21vw;
 
     h1 {
