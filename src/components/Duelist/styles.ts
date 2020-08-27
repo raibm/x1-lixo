@@ -61,17 +61,18 @@ export const Banner = styled.div`
     :hover div#info {
       width: 25vw;
       p {
-        font-size: 10px;
+        font-size: 8px;
       }
     }
 
     :hover div#info-brother {
       width: 25vw;
       p {
-        font-size: 10px;
+        font-size: 8px;
       }
     }
   }
+
   :hover img {
     transition: 0.6s;
     filter: grayscale(0);
