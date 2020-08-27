@@ -4,17 +4,32 @@ export const Container = styled.div`
   background: black;
 
   height: 100%;
+  width: 100vw;
+`;
+
+export const DuelBox = styled.div`
+  height: 100%;
   width: 100%;
 
   display: flex;
-  justify-content: center;
+
+  #brother {
+    justify-content: flex-start;
+  }
+`;
+
+export const DateBox = styled.div`
+    background: var(--main-color);
+    
+    width: 30vw;
+    height: 30vw;
 `;
 
 export const VersusTitleRightLetter = styled.h1`
-  position: fixed;
+  position: relative;
   align-self: center;
 
-  margin-left: 20px;
+  margin-right: -5vh;
 
   z-index: 6;
 
@@ -45,15 +60,15 @@ export const VersusTitleRightLetter = styled.h1`
   @media (max-width: 500px) {
     font-size: 4vh;
 
-    margin-left: 10px;
+    margin-right: -2vh;
   }
 `;
 
 export const VersusTitleLeftLetter = styled.h1`
-  position: fixed;
+  position: relative;
   align-self: center;
 
-  margin-left: -20px;
+  margin-left: -5vh;
 
   z-index: 6;
 
@@ -81,18 +96,18 @@ export const VersusTitleLeftLetter = styled.h1`
   @media (max-width: 500px) {
     font-size: 4vh;
 
-    margin-left: -10px;
+    margin-left: -2vh;
   }
 `;
 
 export const BattleDate = styled.h1`
-  position: fixed;
+  position: relative;
 
   align-self: center;
 
-  margin-top: 50px;
+  margin-top: 120px;
+  margin-left: -5vh;
 
-  z-index: 6;
 
   background: transparent;
 
@@ -100,8 +115,8 @@ export const BattleDate = styled.h1`
 
   animation: ledQuebradoLeft 5s linear infinite;
 
-  + h1 {
-    margin-top: 70px;
+  p#hour {
+    text-align: center;
   }
 
   @keyframes ledQuebradoLeft {

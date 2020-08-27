@@ -12,11 +12,16 @@ export default createGlobalStyle`
     width: 100%;
     font-size: 15px;
     font-family: Helvetica, Arial;
+    overflow-x: hidden;
   }
 
   html {
     background: var(--main-color);
   }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 
 
   :root {

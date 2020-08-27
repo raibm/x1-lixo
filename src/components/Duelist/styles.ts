@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 80vh;
+  height: 90vh;
   width: 100%;
 
-  background: var(--almost-black);
+  background: rgb(24,24,24);
+  background: linear-gradient(180deg, rgba(24,24,24,1) 0%, rgba(24,24,24,1) 75%, rgba(0,0,0,1) 100%);
 
-  justify-content: center;
+  justify-content: flex-end;
+
   align-items: center;
 
   display: flex;
@@ -20,13 +22,9 @@ export const Banner = styled.div`
   width: 30vw;
   height: 30vw;
 
-  margin-top: 45px;
-
   background: var(--main-color);
 
-  position: fixed;
-
-  /* transform: skew(10deg); */
+  /* transform: skew(10de); */
 
   img {
     transition: 1s;
@@ -34,7 +32,6 @@ export const Banner = styled.div`
     width: 100%;
     object-fit: cover;
     filter: grayscale(1);
-    /* transform: skew(-10deg); */
   }
 
   div#player-name {
@@ -75,13 +72,14 @@ export const Banner = styled.div`
 export const PlayerName = styled.div`
   width: 15vw;
   height: 2.5vw;
-  position: fixed;
 
   background: #ff9000;
 
+  position: relative;
+
   text-align-last: center;
 
-  margin-top: -3vw;
+  margin-top: -1vw;
   margin-left: 2vw;
 
   h1 {
@@ -106,9 +104,10 @@ export const PlayerName = styled.div`
 export const InfoPlayer = styled.div`
   width: 0px;
   height: 21vw;
-  position: fixed;
 
   transition: 1s;
+
+  position: relative;
 
   background: #ff9000;
 

@@ -10,11 +10,12 @@ interface DuelistProps {
   idInfo?: string;
   title?: string;
   lastWords?: string;
+  idBanner?: string;
 }
 
 const Duelist: React.FC<DuelistProps> = (props) => {
   return (
-    <Container>
+    <Container id={props.idBanner}>
       <Banner>
         <img src={props.img} alt=""/>
       <InfoPlayer id={props.idInfo}>
