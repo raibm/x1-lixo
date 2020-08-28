@@ -5,11 +5,7 @@ import {
   Banner,
   InfoPlayer,
   PlayerName,
-  BadgesTag,
-  BadgesBox,
   InfoBox,
-  WinIcon,
-  LostIcon,
   DescriptionInfoBox,
 } from './styles';
 
@@ -35,19 +31,7 @@ const Duelist: React.FC<DuelistProps> = (props) => {
               <p className="last-words">"{props.lastWords}"</p>
             </DescriptionInfoBox>
           </InfoBox>
-          {/* <BadgesBox>
-            <BadgesTag>
-              <WinIcon />
-              <h2>Vitórias</h2>
-              <h3>12</h3>
-            </BadgesTag>
-            <td />
-            <BadgesTag>
-              <LostIcon />
-              <h2>Derrotas</h2>
-              <h3>7</h3>
-            </BadgesTag>
-          </BadgesBox> */}
+      
         </InfoPlayer>
         <PlayerName id={props.id}>
           <h1>{props.nickname}</h1>
