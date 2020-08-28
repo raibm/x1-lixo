@@ -1,4 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import { CheckCircle, Cancel } from '../../styles/Icons';
 
 export const Container = styled.div`
   height: 90vh;
@@ -50,16 +52,31 @@ export const Banner = styled.div`
   @media (min-width: 500px) {
     :hover div#info {
       width: 15vw;
+      div {
+        width: 14vw;
+       }
+      p {
+        font-size: 1.3vw;
+      }
     }
 
     :hover div#info-brother {
       width: 15vw;
+       div {
+        width: 14vw;
+       }
+       p {
+        font-size: 1.3vw;
+      }
     }
   }
 
   @media (max-width: 499px) {
     :hover div#info {
       width: 25vw;
+      div {
+        width: 24vw;
+       }
       p {
         font-size: 8px;
       }
@@ -67,8 +84,11 @@ export const Banner = styled.div`
 
     :hover div#info-brother {
       width: 25vw;
+      div {
+        width: 24vw;
+       }
       p {
-        font-size: 8px;
+        font-size:8px;
       }
     }
   }
@@ -78,10 +98,10 @@ export const Banner = styled.div`
     filter: grayscale(0);
   }
 
-  :hover p {
+  /* :hover p {
     transition: 1s;
     font-size: 20px;
-  }
+  } */
 
   @media (max-width: 500px) {
     width: 40vw;
@@ -123,10 +143,10 @@ export const PlayerName = styled.div`
 `;
 
 export const InfoPlayer = styled.div`
-  width: 0px;
+  width: 0;
   height: 21vw;
 
-  transition: 1s;
+  transition: 0.5s;
 
   position: relative;
 
@@ -137,18 +157,101 @@ export const InfoPlayer = styled.div`
 
   p {
     font-family: 'Sriracha', cursive;
-    font-size: 0px;
-    text-indent: 0.2em;
+    font-size: 0;
+    /* text-indent: 0.5em; */
   }
 
   p.last-words {
     font-family: 'Kalam', cursive;
-    text-indent: 1em;
+    font-size: 1.3vw;
+    /* text-indent: 1em; */
   }
 
   @media (min-width: 500px) {
     height: 16vw;
 
     margin-top: -17vw;
+  }
+`;
+
+export const BadgesBox = styled.div`
+  width: 15vw;
+  height: 8vw;
+  padding: 2vh 0vh 0vh 0vh;
+`;
+
+export const InfoBox = styled.div`
+  width: 15vw;
+  height: 9vw;
+  margin: 0 auto;
+  padding: 0vh 0.2vw 0.5vw 0vw;
+  position: relative;
+`;
+
+export const DescriptionInfoBox = styled.div`
+  width: 0;
+  height: 14vh;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+
+  word-break: break-word;
+  
+  overflow-y: scroll;
+  
+  transition: 0.7s;
+  
+   @media (max-width: 700px) {
+    height: 8vh;
+  }
+`;
+
+export const BadgesTag = styled.div`
+  width: 15vw;
+  height: 5vh;
+
+  align-items: center;
+  display: flex;
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    margin: auto;
+  }
+`;
+
+const iconCSS = css`
+  height: 25px;
+  width: 25px;
+
+  border-left: none !important;
+
+  @media (max-width: 420px), (max-height: 320px) {
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    margin-top: 4px;
+  }
+
+  @media (max-width: 320px), (max-height: 320px) {
+    height: 20px;
+    width: 20px;
+    margin-left: 3px;
+    margin-top: 4px;
+  }
+`;
+
+export const WinIcon = styled(CheckCircle)`
+  ${iconCSS};
+  > path {
+    color: var(--almost-black);
+  }
+`;
+
+export const LostIcon = styled(Cancel)`
+  ${iconCSS};
+  > path {
+    color: var(--almost-black);
   }
 `;
