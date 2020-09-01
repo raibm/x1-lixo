@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * { 
@@ -28,6 +28,6 @@ export default createGlobalStyle`
     --main-color: #262626;
     --almost-black: #181818;
     --default-icon-color: #F8F8FF;
-    --actived-icon-color: #FF4300;
+    --actived-icon-color: #FF9000;
   }
-`
+`;

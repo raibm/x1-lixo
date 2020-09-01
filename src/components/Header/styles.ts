@@ -174,7 +174,7 @@ export const SubMenu = styled.button`
   transition: 0.2s;
 
   :hover {
-    border-bottom: solid 1px #ff9000;
+    border-bottom: solid 1px var(--actived-icon-color);
     svg {
       width: 25px;
       height: 25px;
@@ -187,18 +187,18 @@ export const SubMenu = styled.button`
 
   &.active {
     outline: none;
-    border-left: solid 1px #ff9000;
-    border-bottom: solid 1px #ff9000;
-    border-right: solid 1px #ff9000;
+    border-left: solid 1px var(--actived-icon-color);
+    border-bottom: solid 1px var(--actived-icon-color);
+    border-right: solid 1px var(--actived-icon-color);
 
     > svg {
       width: 25px;
       height: 25px;
       > path {
-        color: #ff9000;
+        color: var(--actived-icon-color);
       }
       > polygon {
-        color: #ff9000;
+        color: var(--actived-icon-color);
       }
     }
   }

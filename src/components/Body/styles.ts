@@ -16,5 +16,7 @@ export const DuelBox = styled.div`
   #brother {
     justify-content: flex-start;
   }
+
+  @media(max-width: 500px){}
 `;
 
